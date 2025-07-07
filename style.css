@@ -1,0 +1,506 @@
+:root {
+  --color-black: #0C0C0C;
+  --color-light: #FAFAFA;
+  --color-pink: #FADADD;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+  font-family: "DM Sans", sans-serif;
+  color: var(--color-black);
+}
+
+body {
+  max-width: 100vw;
+  background-color: var(--color-light);
+}
+
+header {
+  padding: 10px 12.5rem;
+  min-height: 100vh;
+  background-image: url(assets/sorridente-jovem-com-cabelos-longos.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+.menu {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70vw;
+  height: 80px;
+  padding: 2px;
+  gap: 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid #ffffff3f;
+  background: #ffffff3f;
+  backdrop-filter: blur(7px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
+  z-index: 1000;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+  color: var(--color-black);
+}
+
+.menu nav ul {
+  display: flex;
+  gap: 50px;
+  list-style-type: none;
+}
+
+.menu nav ul li a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.menu nav ul li a:hover {
+  color: var(--color-light);
+}
+
+.menu .img-logo {
+  width: 120px;
+  height: auto;
+  margin: 10px;
+}
+
+.menu .img-logo:hover {
+  cursor: pointer;
+}
+
+section {
+  padding: 3rem 3rem 4rem;
+  scroll-margin-top: 120px;
+}
+
+.hero-container {
+  width: 600px;
+  margin-top: 10rem;
+}
+
+.title-site {
+  font-family: "Lora", serif;
+  font-size: 45px;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+
+.subtitle-site {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.btn-principal {
+  background-color: #2CA851;
+  margin-top: 40px;
+  padding: 10px 30px;
+  color: var(--color-light);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
+}
+
+.btn-principal:hover {
+  letter-spacing: .5px;
+}
+
+#sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sobre-info {
+  display: flex;
+}
+
+.sobre-text {
+  width: 500px;
+  padding: 2px 0 0 25px;
+}
+
+.sobre-foto {
+  border-radius: 20px;
+  border: 3px solid #FADADD;
+}
+
+h2 {
+  margin-bottom: 3rem;
+  border-bottom: 3px solid #FADADD;
+}
+
+.sobre-nome {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sobre-special {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.sobre-description {
+  font-weight: 300;
+  line-height: 25px;
+}
+
+#servicos {
+  background-color: var(--color-pink);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#servicos h2 {
+  margin-bottom: 10px;
+  border-bottom: 3px solid var(--color-light);
+}
+
+#servicos p {
+  font-size: 16px;
+  color: #555;
+}
+
+.servicos-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 3rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+#resultados {
+  margin: ;
+  padding: 60px 200px;
+  text-align: center;
+  background-color: #f9f7f7;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#resultados h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#resultados p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.resultados-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+}
+
+.resultado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resultado img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.resultado .legenda {
+  font-size: 14px;
+  color: #444;
+  font-style: italic;
+}
+
+#depoimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
+
+#depoimentos h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.depoimentos-container {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  max-width: 75rem;
+}
+
+.depoimentos-container .card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  max-width: 300px;
+  position: relative;
+  text-align: center;
+  border: 1px solid var(--color-pink);
+}
+
+.foto-cliente {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.foto-letra {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #0f9d58;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.depoimentos-container .card h3 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.google-icon {
+  width: 16px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.estrelas {
+  color: #fbbc04;
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.depoimentos-container .card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.link-info {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #888;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.nota-final {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #444;
+}
+
+#cta {
+  background: linear-gradient(to right, #fce4ec, #f8bbd0);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#cta h2 {
+  font-family: "Lora", serif;
+  font-size: 28px;
+  color: var(--color-black);
+  margin-bottom: 16px;
+}
+
+#cta p {
+  font-size: 16px;
+  color: var(--color-black);
+  margin-bottom: 30px;
+}
+
+/* RODAPÉ / CONTATOS */
+
+footer {
+  background-color: #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.footer-container {
+  padding: 50px 20px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.footer-info h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #4a148c;
+}
+
+.footer-info p {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.footer-info a {
+  color: #4a148c;
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  background-color: var(--color-black);
+  text-align: center;
+  font-size: 13px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.footer-copy p {
+  color: var(--color-light);
+}
+
+/* RESPONSIVIDADE GERAL */
+
+@media (max-width: 1024px) {
+  header {
+    padding: 10px;
+    min-height: 80vh;
+  }
+
+  .menu {
+    position: absolute;
+    border: none;
+    background: none;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  .menu nav {
+    display: none;
+  }
+
+  .hero-container {
+    padding: 1rem;
+    width: 20rem;
+  }
+
+
+  .title-site {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .subtitle-site {
+    font-size: 15px;
+  }
+
+  .sobre-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sobre-text {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  #resultados {
+    padding: 40px 2rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-info {
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-site {
+    font-size: 26px;
+  }
+
+  .subtitle-site {
+    font-size: 14px;
+  }
+
+  .btn-principal {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .menu .img-logo {
+    width: 130px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .resultados-galeria,
+  .depoimentos-container {
+    grid-template-columns: 1fr;
+  }
+}
