@@ -11,6 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -29,7 +31,7 @@
             </nav>
         </div>
 
-        <section class="hero-container">
+        <section class="hero-container" data-aos="fade-up">
             <h1 class="title-site">Realce sua beleza com naturalidade.</h1>
             <p class="subtitle-site"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero voluptates
                 totam culpa id assumenda
@@ -42,7 +44,7 @@
     <main>
         <section id="sobre">
             <h2>Sobre a profissional</h2>
-            <div class="sobre-info">
+            <div class="sobre-info" data-aos="fade-right">
                 <img src="assets/foto-sobre.jpg" alt="Foto da profissional" class="sobre-foto" width="300px">
                 <div class="sobre-text">
                     <p class="sobre-nome">Dra. Camila Souza</p>
@@ -67,32 +69,32 @@
 
             <div class="servicos-cards">
 
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <h3>Preenchimento Labial</h3>
                     <p>Aumenta o volume e define os lábios com naturalidade, promovendo simetria e hidratação.</p>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <h3>Toxina Botulínica (Botox)</h3>
                     <p>Suaviza rugas e linhas de expressão, mantendo a leveza e o movimento do rosto.</p>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <h3>Rinoplastia Não Cirúrgica</h3>
                     <p>Corrige imperfeições no nariz com ácido hialurônico, sem necessidade de cirurgia.</p>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <h3>Lipo de Papada Enzimática</h3>
                     <p>Reduz a gordura localizada na região abaixo do queixo com aplicação de enzimas.</p>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <h3>Fios de Sustentação</h3>
                     <p>Proporciona efeito lifting imediato, reposicionando a pele sem cortes cirúrgicos.</p>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <h3>Harmonização Facial Completa</h3>
                     <p>Combinação de técnicas para promover equilíbrio e harmonia nos traços faciais.</p>
                 </div>
@@ -103,7 +105,7 @@
 
         </section>
 
-        <section id="resultados">
+        <section id="resultados" data-aos="fade-up">
 
             <div class="titles">
                 <h2>Resultados reais</h2>
@@ -140,7 +142,7 @@
 
             <div class="depoimentos-container">
 
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <img class="foto-cliente" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente 1">
                     <h3>Roberta Cristina Barros</h3>
                     <img class="google-icon" src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google">
@@ -150,7 +152,7 @@
                     <span class="link-info">Consulte Mais informação</span>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <img class="foto-cliente" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Cliente 2">
                     <h3>Izabela Sousa</h3>
                     <img class="google-icon" src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google">
@@ -158,7 +160,7 @@
                     <p>Profissional maravilhosa, e meu pós está sendo super tranquilo, não senti dor nenhuma.</p>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <img class="foto-cliente" src="https://randomuser.me/api/portraits/women/58.jpg" alt="Cliente 3">
                     <h3>Elaine Silva</h3>
                     <img class="google-icon" src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google">
@@ -168,7 +170,7 @@
                     <span class="link-info">Consulte Mais informação</span>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <div class="foto-letra">GG</div>
                     <h3>Geisy Mara</h3>
                     <img class="google-icon" src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google">
@@ -186,7 +188,7 @@
         </section>
 
         <section id="cta">
-            <div class="cta-container">
+            <div class="cta-container" data-aos="zoom-in-up">
                 <h2>Pronta para realçar sua beleza natural?</h2>
                 <p>Agende agora sua avaliação gratuita e descubra o que a harmonização facial pode fazer por você!</p>
                 <a href="#" class="btn-principal">Agende sua avaliação gratuita</a>
@@ -228,5 +230,12 @@
     </footer>
 
 </body>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // duração da animação em ms
+        once: true // anima só uma vez
+    });
+</script>
 
 </html>
